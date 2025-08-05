@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{28603FC5-BB80-4073-8241-5D8F5D937F92}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Assembly-CSharp</RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="com.rlabrecque.steamworks.net">
+      <HintPath>..\..\Programs\Launchers\Steam\steamapps\common\Mage Arena\MageArena_Data\Managed\com.rlabrecque.steamworks.net.dll</HintPath>
+    </Reference>
+    <Reference Include="DissonanceVoip">
+      <HintPath>..\..\Programs\Launchers\Steam\steamapps\common\Mage Arena\MageArena_Data\Managed\DissonanceVoip.dll</HintPath>
+    </Reference>
+    <Reference Include="DissonanceVoip.FishNet">
+      <HintPath>..\..\Programs\Launchers\Steam\steamapps\common\Mage Arena\MageArena_Data\Managed\DissonanceVoip.FishNet.dll</HintPath>
+    </Reference>
+    <Reference Include="FishNet.Runtime">
+      <HintPath>..\..\Programs\Launchers\Steam\steamapps\common\Mage Arena\MageArena_Data\Managed\FishNet.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="GameKit.Dependencies">
+      <HintPath>..\..\Programs\Launchers\Steam\steamapps\common\Mage Arena\MageArena_Data\Managed\GameKit.Dependencies.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>..\..\Programs\Launchers\Steam\steamapps\common\Mage Arena\MageArena_Data\Managed\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Recognissimo">
+      <HintPath>..\..\Programs\Launchers\Steam\steamapps\common\Mage Arena\MageArena_Data\Managed\Recognissimo.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation">
+      <HintPath>..\..\Programs\Launchers\Steam\steamapps\common\Mage Arena\MageArena_Data\Managed\Unity.AI.Navigation.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>..\..\Programs\Launchers\Steam\steamapps\common\Mage Arena\MageArena_Data\Managed\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>..\..\Programs\Launchers\Steam\steamapps\common\Mage Arena\MageArena_Data\Managed\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.HighDefinition.Runtime">
+      <HintPath>..\..\Programs\Launchers\Steam\steamapps\common\Mage Arena\MageArena_Data\Managed\Unity.RenderPipelines.HighDefinition.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\Programs\Launchers\Steam\steamapps\common\Mage Arena\MageArena_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>..\..\Programs\Launchers\Steam\steamapps\common\Mage Arena\MageArena_Data\Managed\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\Programs\Launchers\Steam\steamapps\common\Mage Arena\MageArena_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\Programs\Launchers\Steam\steamapps\common\Mage Arena\MageArena_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Programs\Launchers\Steam\steamapps\common\Mage Arena\MageArena_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\..\Programs\Launchers\Steam\steamapps\common\Mage Arena\MageArena_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\Programs\Launchers\Steam\steamapps\common\Mage Arena\MageArena_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\Programs\Launchers\Steam\steamapps\common\Mage Arena\MageArena_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>..\..\Programs\Launchers\Steam\steamapps\common\Mage Arena\MageArena_Data\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>..\..\Programs\Launchers\Steam\steamapps\common\Mage Arena\MageArena_Data\Managed\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\Programs\Launchers\Steam\steamapps\common\Mage Arena\MageArena_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\Programs\Launchers\Steam\steamapps\common\Mage Arena\MageArena_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\Programs\Launchers\Steam\steamapps\common\Mage Arena\MageArena_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\Programs\Launchers\Steam\steamapps\common\Mage Arena\MageArena_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>..\..\Programs\Launchers\Steam\steamapps\common\Mage Arena\MageArena_Data\Managed\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityHFSM">
+      <HintPath>..\..\Programs\Launchers\Steam\steamapps\common\Mage Arena\MageArena_Data\Managed\UnityHFSM.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActivateSwizards.cs" />
+    <Compile Include="AiMAgeBook.cs" />
+    <Compile Include="AINodes.cs" />
+    <Compile Include="AlignSceneView.cs" />
+    <Compile Include="BlinkSpellController.cs" />
+    <Compile Include="BlueRaja\FastPriorityQueue.cs" />
+    <Compile Include="BlueRaja\FastPriorityQueueNode.cs" />
+    <Compile Include="BlueRaja\GenericPriorityQueue.cs" />
+    <Compile Include="BlueRaja\GenericPriorityQueueNode.cs" />
+    <Compile Include="BlueRaja\IFixedSizePriorityQueue.cs" />
+    <Compile Include="BlueRaja\IPriorityQueue.cs" />
+    <Compile Include="BlueRaja\SimplePriorityQueue.2.cs" />
+    <Compile Include="BlueRaja\SimplePriorityQueue.cs" />
+    <Compile Include="BlueRaja\StablePriorityQueue.cs" />
+    <Compile Include="BlueRaja\StablePriorityQueueNode.cs" />
+    <Compile Include="BogFrogController.cs" />
+    <Compile Include="BogFrogInteractor.cs" />
+    <Compile Include="BogFrogSingleController.cs" />
+    <Compile Include="BoneDogController.cs" />
+    <Compile Include="BoneDogTargets.cs" />
+    <Compile Include="BookController.cs" />
+    <Compile Include="BootstrapManager.cs" />
+    <Compile Include="BootstrapNetworkManager.cs" />
+    <Compile Include="BounceMushroomManager.cs" />
+    <Compile Include="BouncePad.cs" />
+    <Compile Include="BounceShroomTrigger.cs" />
+    <Compile Include="BrazierInteract.cs" />
+    <Compile Include="BrazzerInteract.cs" />
+    <Compile Include="CastleFlagCapturedNotifier.cs" />
+    <Compile Include="CastleWraithController.cs" />
+    <Compile Include="CaveDrip.cs" />
+    <Compile Include="ChestInteract.cs" />
+    <Compile Include="ChestInteract1.cs" />
+    <Compile Include="ChestNetController.cs" />
+    <Compile Include="ChestNetController1.cs" />
+    <Compile Include="cinemamode.cs" />
+    <Compile Include="CleetedWalkingStickController.cs" />
+    <Compile Include="Colorblindness.cs" />
+    <Compile Include="ColoseumManager.cs" />
+    <Compile Include="ColoseumPots.cs" />
+    <Compile Include="CraftHammerController.cs" />
+    <Compile Include="CraftingForge.cs" />
+    <Compile Include="CraftInteracter.cs" />
+    <Compile Include="CraftTableToCastleHex.cs" />
+    <Compile Include="CrystalReactor.cs" />
+    <Compile Include="CrystalShard.cs" />
+    <Compile Include="CrystalSoup.cs" />
+    <Compile Include="CurvedLinePoint.cs" />
+    <Compile Include="CurvedLineRenderer.cs" />
+    <Compile Include="CustomizeHighlightColor.cs" />
+    <Compile Include="DarkBlastController.cs" />
+    <Compile Include="DartController.cs" />
+    <Compile Include="DartGunController.cs" />
+    <Compile Include="debugmush.cs" />
+    <Compile Include="Delaunay2D.cs" />
+    <Compile Include="DespawnLackyRB.cs" />
+    <Compile Include="DetectAudioListenerLeave.cs" />
+    <Compile Include="DethRobeRaycaster.cs" />
+    <Compile Include="DissonanceMicSource.cs" />
+    <Compile Include="DissonanceProcessAudio.cs" />
+    <Compile Include="DissonanceSource.cs" />
+    <Compile Include="DissonanceSpeechSource.cs" />
+    <Compile Include="Dissonance\Integrations\Offline\OfflineCommsNetwork.cs" />
+    <Compile Include="DoorInteract.cs" />
+    <Compile Include="DoorInteract1.cs" />
+    <Compile Include="DoorOpen.cs" />
+    <Compile Include="DrawPixels_Done\DrawPixels.cs" />
+    <Compile Include="DrawPixels_Done\DrawPixelsUI.cs" />
+    <Compile Include="DrawPixels_Done\DrawPixelsVisual.cs" />
+    <Compile Include="DuendeController.cs" />
+    <Compile Include="DuendeInteractor.cs" />
+    <Compile Include="DuendeManager.cs" />
+    <Compile Include="DuendeRagdollAudio.cs" />
+    <Compile Include="DungeonGenerator.cs" />
+    <Compile Include="DungeonPathfinder2D.cs" />
+    <Compile Include="EnableMeshRenderers.cs" />
+    <Compile Include="ExampleSpellLightningBolt.cs" />
+    <Compile Include="ExcaliberBlade.cs" />
+    <Compile Include="ExcaliberHilt.cs" />
+    <Compile Include="ExcaliburController.cs" />
+    <Compile Include="ExplosionController.cs" />
+    <Compile Include="FallenKnight.cs" />
+    <Compile Include="FallenKnightNet.cs" />
+    <Compile Include="FindPublicLobbies.cs" />
+    <Compile Include="FireAudioPlayer.cs" />
+    <Compile Include="FireballController.cs" />
+    <Compile Include="FireballDectetion.cs" />
+    <Compile Include="FireballFireController.cs" />
+    <Compile Include="FishNet\Serializing\Generated\GeneratedComparers___Internal.cs" />
+    <Compile Include="FishNet\Serializing\Generated\GeneratedReaders___Internal.cs" />
+    <Compile Include="FishNet\Serializing\Generated\GeneratedWriters___Internal.cs" />
+    <Compile Include="FishNet\Serializing\Generated_DeltaReaders.cs" />
+    <Compile Include="FishNet\Serializing\Generated_DeltaWriters.cs" />
+    <Compile Include="FishySteamworks\BidirectionalDictionary.cs" />
+    <Compile Include="FishySteamworks\Client\ClientHostSocket.cs" />
+    <Compile Include="FishySteamworks\Client\ClientSocket.cs" />
+    <Compile Include="FishySteamworks\CommonSocket.cs" />
+    <Compile Include="FishySteamworks\FishySteamworks.cs" />
+    <Compile Include="FishySteamworks\LocalPacket.cs" />
+    <Compile Include="FishySteamworks\Server\ServerSocket.cs" />
+    <Compile Include="FitToWaterSurface.cs" />
+    <Compile Include="FitToWaterSurfaceBurst.cs" />
+    <Compile Include="FlagController.cs" />
+    <Compile Include="FlagPositionLerper.cs" />
+    <Compile Include="FloatingIceberg.cs" />
+    <Compile Include="FoamBuffer.cs" />
+    <Compile Include="FoamShore.cs" />
+    <Compile Include="ForceFieldTeam.cs" />
+    <Compile Include="FreezeHitController.cs" />
+    <Compile Include="FrogBalloon.cs" />
+    <Compile Include="FrogBladeController.cs" />
+    <Compile Include="FrogItem.cs" />
+    <Compile Include="FrogSpear.cs" />
+    <Compile Include="FrostBoltController.cs" />
+    <Compile Include="FullscreenSamplesEffectSelection.cs" />
+    <Compile Include="FungalWalkingStick.cs" />
+    <Compile Include="Gameplay\VoiceChat\CustomDissonancePlayer.cs" />
+    <Compile Include="Generator2D.cs" />
+    <Compile Include="GetEntrancePoint.cs" />
+    <Compile Include="GetHexAiNodes.cs" />
+    <Compile Include="GetMap.cs" />
+    <Compile Include="GetPlayerGameobject.cs" />
+    <Compile Include="GetRespPortal.cs" />
+    <Compile Include="GetRockPlayerOwner.cs" />
+    <Compile Include="GetShadowWizardController.cs" />
+    <Compile Include="GetSoupFromGuy.cs" />
+    <Compile Include="GolemController.cs" />
+    <Compile Include="GolemGuyAdder.cs" />
+    <Compile Include="Graphs\Edge.cs" />
+    <Compile Include="Graphs\Vertex.2.cs" />
+    <Compile Include="Graphs\Vertex.cs" />
+    <Compile Include="Grid.cs" />
+    <Compile Include="Grid2D.cs" />
+    <Compile Include="HatSpin.cs" />
+    <Compile Include="HealthBarLerper.cs" />
+    <Compile Include="HolyLightSpell.cs" />
+    <Compile Include="IHitableMonster.cs" />
+    <Compile Include="IInteractable.cs" />
+    <Compile Include="IInteractableNetworkObj.cs" />
+    <Compile Include="IItemInteraction.cs" />
+    <Compile Include="ISpell.cs" />
+    <Compile Include="ISpellCommand.cs" />
+    <Compile Include="ItemSpawner.cs" />
+    <Compile Include="ITimedInteractable.cs" />
+    <Compile Include="KickPlayersHolder.cs" />
+    <Compile Include="KillFeedMessage.cs" />
+    <Compile Include="KnightDong.cs" />
+    <Compile Include="LackyController.cs" />
+    <Compile Include="LavaAudio.cs" />
+    <Compile Include="Levitator.cs" />
+    <Compile Include="LightningBoltDamage.cs" />
+    <Compile Include="LightningBoltSpellController.cs" />
+    <Compile Include="LightningLookAt.cs" />
+    <Compile Include="LineSmoother.cs" />
+    <Compile Include="LinkDirectionalToCustomNightSky.cs" />
+    <Compile Include="LobbyDataEntry.cs" />
+    <Compile Include="LogItem.cs" />
+    <Compile Include="LookatCam.cs" />
+    <Compile Include="LookatCamera.cs" />
+    <Compile Include="MageBookController.cs" />
+    <Compile Include="MagicMirrorController.cs" />
+    <Compile Include="MagicMissleController.cs" />
+    <Compile Include="MainMenuManager.cs" />
+    <Compile Include="MainMenuManagerNetworked.cs" />
+    <Compile Include="ManBlinls.cs" />
+    <Compile Include="MapCGFader.cs" />
+    <Compile Include="MenuThemeVolumeUpper.cs" />
+    <Compile Include="MonsterHitScript.cs" />
+    <Compile Include="MountainWindTrigger.cs" />
+    <Compile Include="MoutainWind.cs" />
+    <Compile Include="MushManInteractor.cs" />
+    <Compile Include="MushroomBottomBoinger.cs" />
+    <Compile Include="MushroomGuyController.cs" />
+    <Compile Include="MushroomManTrigger.cs" />
+    <Compile Include="MushroomSword.cs" />
+    <Compile Include="NameTagDistanceCulling.cs" />
+    <Compile Include="NetHudCanvasHider.cs" />
+    <Compile Include="NetInteractionManager.cs" />
+    <Compile Include="NetworkedFireballController.cs" />
+    <Compile Include="NightAudioSwap.cs" />
+    <Compile Include="NpcOpenDoor.cs" />
+    <Compile Include="OceanTriggershit.cs" />
+    <Compile Include="OrbController.cs" />
+    <Compile Include="PageController.cs" />
+    <Compile Include="PageLootTable.cs" />
+    <Compile Include="PaperInteract.cs" />
+    <Compile Include="PaperMover.cs" />
+    <Compile Include="PerfectedCrystal.cs" />
+    <Compile Include="PicSwapper.cs" />
+    <Compile Include="PipeItem.cs" />
+    <Compile Include="PixelArtDrawingSystem.cs" />
+    <Compile Include="PixelArtDrawingSystemVisual.cs" />
+    <Compile Include="PlayerAudioPlayer.cs" />
+    <Compile Include="PlayerInteract.cs" />
+    <Compile Include="PlayerInventory.cs" />
+    <Compile Include="PlayerMapIconController.cs" />
+    <Compile Include="PlayerMovement.cs" />
+    <Compile Include="PlayerRespawnManager.cs" />
+    <Compile Include="PlayerVolumeSettingsController.cs" />
+    <Compile Include="PoofController.cs" />
+    <Compile Include="PoofSpell.cs" />
+    <Compile Include="PortcullisController.cs" />
+    <Compile Include="PortcullisNetController.cs" />
+    <Compile Include="PotInteract.cs" />
+    <Compile Include="Prim.cs" />
+    <Compile Include="ProjectCaustics.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PullExcalibur.cs" />
+    <Compile Include="PushtoTalk.cs" />
+    <Compile Include="RavenController.cs" />
+    <Compile Include="RavenSpawner.cs" />
+    <Compile Include="RaycastAudioDamper.cs" />
+    <Compile Include="Readme.cs" />
+    <Compile Include="Recognissimo\Samples\SpeechRecognizerExample\SpeechRecognizerExample.cs" />
+    <Compile Include="Recognissimo\Samples\VoiceActivityDetectorExample\VoiceActivityDetectorExample.cs" />
+    <Compile Include="Recognissimo\Samples\VoiceControlExample\VoiceControlExample.cs" />
+    <Compile Include="RenableCursorOnMenus.cs" />
+    <Compile Include="ResourceManager.cs" />
+    <Compile Include="RespawnWormhole.cs" />
+    <Compile Include="RiverPitchRandomizer.cs" />
+    <Compile Include="Rock.cs" />
+    <Compile Include="RockCheckSphere.cs" />
+    <Compile Include="RockController.cs" />
+    <Compile Include="RockSpellController.cs" />
+    <Compile Include="RoomEnabler.cs" />
+    <Compile Include="RoomPrefabEnabler.cs" />
+    <Compile Include="SampleShowcase.cs" />
+    <Compile Include="SamplesShowcase.cs" />
+    <Compile Include="SceneHDRPSettingsSetter.cs" />
+    <Compile Include="SetChatMessage.cs" />
+    <Compile Include="SetLabelMic.cs" />
+    <Compile Include="SetSenseText.cs" />
+    <Compile Include="SettingsHolder.cs" />
+    <Compile Include="SetUpModelProvider.cs" />
+    <Compile Include="ShadowWizardAI.cs" />
+    <Compile Include="ShadowWizardAnimationController.cs" />
+    <Compile Include="ShoreDecalTrigger.cs" />
+    <Compile Include="showcheckmark.cs" />
+    <Compile Include="ShowLobbyCode.cs" />
+    <Compile Include="ShrinkRay.cs" />
+    <Compile Include="SkelemageAniController.cs" />
+    <Compile Include="SkelemageController.cs" />
+    <Compile Include="SkeletoneBodyPart.cs" />
+    <Compile Include="SkeletoneController.cs" />
+    <Compile Include="SmokeCloud.cs" />
+    <Compile Include="SmokeRingController.cs" />
+    <Compile Include="SoupManController.cs" />
+    <Compile Include="SoupManInteractor.cs" />
+    <Compile Include="SpawnNetworkedItem.cs" />
+    <Compile Include="SpellDarkBlast.cs" />
+    <Compile Include="SpellHolyLight.cs" />
+    <Compile Include="SpellRock.cs" />
+    <Compile Include="SpellWisp.cs" />
+    <Compile Include="SpikedRootController.cs" />
+    <Compile Include="SpikeGrower.cs" />
+    <Compile Include="SpineSyncer.cs" />
+    <Compile Include="SporeFrog.cs" />
+    <Compile Include="SwordController.cs" />
+    <Compile Include="SyncHandPos.cs" />
+    <Compile Include="ThrummingStoneController.cs" />
+    <Compile Include="TitleLetterShake.cs" />
+    <Compile Include="ToggleDungeonMeshRenders.cs" />
+    <Compile Include="TorchController.cs" />
+    <Compile Include="TorchHitDetection.cs" />
+    <Compile Include="TutorialBrazzier.cs" />
+    <Compile Include="TutorialFlagController.cs" />
+    <Compile Include="TutorialGoblin.cs" />
+    <Compile Include="TutorialScript.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+    <Compile Include="VoiceControlListener.cs" />
+    <Compile Include="WalkingStickController.cs" />
+    <Compile Include="WardController.cs" />
+    <Compile Include="WeaponHitDetection.cs" />
+    <Compile Include="WeatherCycle.cs" />
+    <Compile Include="WindZome.cs" />
+    <Compile Include="WispController.cs" />
+    <Compile Include="WormholeTele.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
