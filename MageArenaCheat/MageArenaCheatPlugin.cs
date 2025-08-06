@@ -7,6 +7,7 @@ using UnityEngine;
 namespace MageArenaCheat
 {
     [BepInPlugin("com.example.magearena.cheat", "MageArena Cheat", "1.0.0")]
+    [BepInProcess("MageArena.exe")]
     public class MageArenaCheatPlugin : BaseUnityPlugin
     {
         private Harmony _harmony;
